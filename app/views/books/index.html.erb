@@ -1,1 +1,11 @@
-<h1>投稿一覧</h1>
+<% @books.each do |book| %>
+  <div>
+    <%= link_to book_path(book.id) do %>
+    <%= image_tag 'sample-author1.jpg' %>
+    <% end %>
+    <%= link_to user_path(book.id) do %>
+    <%= book.title %>
+    <% end %>
+    <%= book.body %>
+  </div>
+<% end %>
