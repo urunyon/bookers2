@@ -33,7 +33,7 @@
       <%= link_to books_path, class: "nav-link text-light" do %>
         <i class="fas fa-book-open"></i> Books
       <% end %>
-      <%= link_to root_path(current_user), class: "nav-link text-light", method: :delete do %>
+      <%= link_to destroy_user_session_path, class: "nav-link text-light", method: :delete do %>
         <i class="fas fa-sign-out-alt"></i> Log out
       <% end %>
     <% else %>
